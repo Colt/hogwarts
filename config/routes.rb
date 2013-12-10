@@ -3,6 +3,6 @@ Hogwarts::Application.routes.draw do
 
     get '/houses' => 'houses#index'
     get '/students' => 'students#index'
-    get '/students/new' => 'students#create'
+    get '/students/new' => 'students#new'
 
 end
