@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = params[:student]
+    @student = Student.find(params[:id])
   end
 
   def new
@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
   def create
     new_student = Student.create(params[:student])
     # house << student
-    redirect_to '/students/index'
+    redirect_to '/students'
   end
 
 end
