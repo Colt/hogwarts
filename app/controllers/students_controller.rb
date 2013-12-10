@@ -8,9 +8,13 @@ class StudentsController < ApplicationController
   end
 
   def new
-    new_student = Student.new(params)
-    student = Student.create
+    @student = Student.new
     house << student
     redirect to 'index'
   end
+
+  def create
+    new_student = Student.new(params)
+  end
+
 end
