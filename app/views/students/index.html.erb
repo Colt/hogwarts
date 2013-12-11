@@ -1,4 +1,4 @@
 <h1>Here are the students</h2>
 <% @students.each do |student| %>
-  <li><%= student.name %><a href='/students/<%=student.id %>'</li>
+  <li><a href='/students/<%=student.id%>'><%= student.name %></a></li>
 <% end %>

@@ -12,7 +12,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-    new_student = Student.create(params[:student])
+    house = House.find(1)
+    house.students.create(params[:student])
     # house << student
     redirect_to '/students'
   end
