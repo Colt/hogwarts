@@ -13,12 +13,12 @@ class StudentsController < ApplicationController
 
   def create
     sort.students.create(params[:student])
-    # house << student
     redirect_to '/students'
   end
 
   def sort
-    House.find(2)
+    num = 1 + rand(4)
+    House.find(num)
   end
 
 end
