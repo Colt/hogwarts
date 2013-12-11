@@ -12,10 +12,13 @@ class StudentsController < ApplicationController
   end
 
   def create
-    house = House.find(1)
-    house.students.create(params[:student])
+    sort.students.create(params[:student])
     # house << student
     redirect_to '/students'
+  end
+
+  def sort
+    House.find(2)
   end
 
 end
