@@ -1,6 +1,10 @@
 <h1><%= @house.name %></h1>
 <ul>
   <% @house.students.each do |student| %>
-    <li><%= student.name %></li>
+    <li><a href='/students/<%=student.id%>'><%= student.name %></a></li>
   <% end %>
 </ul>
+
+<li><%=link_to "View All Houses", houses_path%></li>
+<li><%=link_to "View All Students", students_path%></li>
+<li><%=link_to "Enroll New Student", new_student_path%></li>
