@@ -1,12 +1,24 @@
-<h1>Make a new student!<h1>
+<div class="container">
+  <div class ="row"></div>
+  <div class="span12"></div>
 
-<%= form_for @student do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
+    <h1>Make a new student!</h1>
+
+<%= form_for @student, :html => {:class => "form-horizontal", :role => "form"} do |f| %>
+<div class="control-group">
+  <%= f.text_field :name, class: "form-control", placeholder: "Enter a student's name" %>
+</div>
+  <br>
+  <%= f.submit :class => 'btn btn-primary' %>
 <% end %>
-
-
-
+<br>
 <li><%=link_to "View Houses", houses_path%></li>
 <li><%=link_to "Back To Students Index", students_path%></li>
+
+</div>
+</div>
+</div>
+
+
+
+

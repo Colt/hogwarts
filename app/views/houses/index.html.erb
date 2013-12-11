@@ -1,4 +1,40 @@
-<h1>Houses Index</h1>
-<% @houses.each do |h| %>
-  <a href="/houses/<%= h.id %>"><%= h.name %></a>
-<% end %>
+
+<div class="container">
+  <h1>Houses Index</h1>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3">
+          <img class="img-round" src="http://fc07.deviantart.net/fs71/i/2012/364/1/4/house_gryffindor_poster_by_liquidsouldesign-d5po18w.jpg" alt="140x140" style="width: 140px; height: 140px;">
+          <h2>Gryffindor</h2>
+
+          <p> The house of courage, bravery, and chivalrous attitudes with a daring and reckless nature.</p>
+
+          <p><a class="btn btn-default" href="/houses/1" role="button">View members »</a></p>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <img class="img-rounded" src="http://fc04.deviantart.net/fs70/i/2012/364/a/5/house_ravenclaw_poster_by_liquidsouldesign-d5po168.jpg" alt="140x140" style="width: 140px; height: 140px;">
+          <h2>Ravenclaw</h2>
+
+
+          <p>The house of intelligence and wit.  They're thinkers and enjoy learning as much as possible</p>
+
+          <p><a class="btn btn-default" href="/houses/2" role="button">View members »</a></p>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <img class="img-rounded" src="http://fc01.deviantart.net/fs70/i/2012/364/f/9/house_hufflepuff_poster_by_liquidsouldesign-d5po11v.jpg" alt="140x140" style="width: 140px; height: 140px;">
+          <h2>Hufflepuff </h2>
+
+          <p>The often underrated house of loyal, hardworking, protective and caring individuals</p>
+
+          <p><a class="btn btn-default" href="/houses/3" role="button">View members »</a></p>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+          <img class="img-round" src="http://th02.deviantart.net/fs70/PRE/f/2012/364/c/7/c7201b1b39609bf172716eb1c3e87921-d5po0we.jpg" alt="140x140" style="width: 140px; height: 140px;">
+          <h2>Slytherin</h2>
+
+          <p>A house full of ambitious and cunning students with a powerful sense of self-preservation</p>
+
+          <p><a class="btn btn-default" href="/houses/4" role="button">View Members »</a></p>
+        </div>
+      </div>
+</div>
+
